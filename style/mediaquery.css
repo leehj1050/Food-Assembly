@@ -1,0 +1,79 @@
+/*desktop*/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  header > nav {
+    padding: 1em 1em;
+  }
+}
+
+/*tablet*/
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  header > nav {
+    padding: 1em 1em;
+  }
+  .input__box {
+    width: 50%;
+  }
+  .input__box input {
+    width: 100%;
+    padding: 0 5em;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 767px) {
+  header {
+    height: 50vh;
+  }
+  header > nav {
+    padding: 1em 1em;
+  }
+  header ul {
+    display: none;
+  }
+  .box__area p {
+    font-size: 20px;
+  }
+  .input__box {
+    width: 50%;
+  }
+  .input__box input {
+    width: 100%;
+    padding-left: 4em;
+  }
+  .bar__icon__box {
+    display: block;
+  }
+  .bar__icon {
+    display: block;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    z-index: 1;
+    color: #056e7d;
+  }
+  .bar__icon.active {
+    color: #fff;
+  }
+  .hidden__menu {
+    width: 100%;
+    position: fixed;
+    background-color: rgb(85, 84, 84);
+    line-height: 5em;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    padding-top: 3.5em;
+  }
+  .hidden__menu.active {
+    display: block;
+  }
+
+  .hidden__menu a:hover {
+    color: #57c922;
+  }
+  .hidden__menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+  }
+}

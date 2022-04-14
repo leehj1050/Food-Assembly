@@ -1,0 +1,98 @@
+:root {
+  /*padding*/
+  --padding-size: 3em 25em;
+  --padding-small-size: 0.5em 0.5em;
+  --padding-top: 2em;
+
+  /*width*/
+  --width-size: 100%;
+
+  /*height*/
+  --height-size: 3em;
+
+  /*font-color*/
+  --color-font: #056e7d;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: var(--width-size);
+  height: 70vh;
+  display: flex;
+  position: relative;
+  background-color: bisque;
+}
+header nav {
+  width: var(--width-size);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-size);
+}
+header nav .img__box {
+  display: flex;
+  justify-content: space-between;
+}
+header nav img {
+  padding: var(--padding-small-size);
+  height: var(--height-size);
+  cursor: pointer;
+}
+header ul {
+  width: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+header ul li {
+  padding: var(--padding-small-size);
+}
+header ul li a {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--color-font);
+}
+.box__area {
+  padding-top: var(--padding-top);
+  background-position: right;
+}
+.box__area p {
+  font-size: 40px;
+  color: var(--color-font);
+}
+.input__box {
+  padding-top: var(--padding-top);
+  position: relative;
+}
+.input__box input {
+  width: 30%;
+  height: var(--height-size);
+  padding-left: 6em;
+  font-size: 17px;
+  background-color: #fff;
+  border: none;
+  line-height: var(--height-size);
+}
+.input__box i {
+  position: absolute;
+  top: var(--height-size);
+  left: var(--padding-top);
+  cursor: pointer;
+}
+.input__box input:focus {
+  outline: none;
+}
+
+/*hidden menu*/
+.bar__icon__box {
+  display: none;
+}
+.bar__icon {
+  font-size: 2em;
+  cursor: pointer;
+}
+.hidden__menu {
+  display: none;
+}
